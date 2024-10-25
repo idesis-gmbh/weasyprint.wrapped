@@ -22,8 +22,17 @@ public class ConfigurationProvider
 
     public string GetAsset()
     {
-        var env = RuntimeInformation.IsOSPlatform(OSPlatform.Windows) ? "windows" : "linux";
-        return Path.Combine(assetsFolder, $"standalone-{env}-64.zip");
+        string arch = RuntimeInformation.OSArchitecture switch
+        {
+            Architecture.X64 => "x64",
+            Architecture.Arm64 => "aarch64",
+            _ => string.Empty
+        };
+
+        string env = RuntimeInformation.IsOSPlatform(OSPlatform.Windows) ? "windows" :
+            RuntimeInformation.IsOSPlatform(OSPlatform.OSX) ? "osx" : "linux";
+        
+        return Path.Combine(assetsFolder, $"standalone-{env}-{arch}.zip");
     }
 
     public string GetWorkingFolder()

@@ -11,6 +11,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weasyprint.Wrapped.Example"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weasyprint.Wrapped.ExampleApi", "Weasyprint.Wrapped.ExampleApi\Weasyprint.Wrapped.ExampleApi.csproj", "{A35286E9-A46C-4542-8624-C1620D6025A6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{81733CF0-658F-409F-BC6A-761D81173B47}"
+	ProjectSection(SolutionItems) = preProject
+		..\build-on-linux-aarch64.sh = ..\build-on-linux-aarch64.sh
+		..\build-on-linux-x64.sh = ..\build-on-linux-x64.sh
+		..\build-on-osx-aarch64.sh = ..\build-on-osx-aarch64.sh
+		..\build-on-osx-x64.sh = ..\build-on-osx-x64.sh
+		..\build-on-windows.ps1 = ..\build-on-windows.ps1
+		Directory.Build.props = Directory.Build.props
+		nuget-build.sh = nuget-build.sh
+		version.txt = version.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

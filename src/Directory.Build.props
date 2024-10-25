@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+	<PropertyGroup>
+		<Version>$([System.IO.File]::ReadAllText("$(MSBuildThisFileDirectory)version.txt"))</Version>
+		<Company>Software Solutions Hertogen</Company>
+		<Owners>idesis GmbH</Owners>
+		<Authors>Bert Hertogen (macOS Fork by idesis GmbH)</Authors>
+		<Copyright>Copyright © 2022-2024 idesis GmbH</Copyright>
+		<RepositoryUrl>https://github.com/berthertogen/weasyprint.wrapped</RepositoryUrl>
+		<PackageTags>weasyprint;PDF;html;standalone</PackageTags>
+		<PackageProjectUrl>https://github.com/idesis-gmbh/weasyprint.wrapped</PackageProjectUrl>
+		<Description>A .netstandaard wrapper for the weasyprint PDF printer. This package is standalone and does not required you to install any software on your server. It runs on windows and linux.</Description>
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
+	</PropertyGroup>
+</Project>
